@@ -8,6 +8,7 @@ Gradedialog::Gradedialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+//Gradedialog destructor
 Gradedialog::~Gradedialog()
 {
     delete ui;
