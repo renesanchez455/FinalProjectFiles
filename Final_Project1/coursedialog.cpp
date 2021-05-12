@@ -10,17 +10,20 @@ Coursedialog::Coursedialog(QWidget *parent) :
     ui->setupUi(this);
 }
 
+//Course destructor
 Coursedialog::~Coursedialog()
 {
     delete ui;
 }
 
+//Option to return to admin window 
 void Coursedialog::on_cancelButton_clicked()
 {
     Coursedialog::close();
     emit showadmine();
 }
 
+//Assigns the information to the course 
 void Coursedialog::on_registerbutton_clicked()
 {
     QString id = ui->courseIdEdit->text();
