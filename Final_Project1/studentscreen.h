@@ -4,6 +4,8 @@
 #include "ui_studentdialog.h"
 #include "suspenddialog.h"
 #include "ui_suspenddialog.h"
+#include "ratingdialog.h"
+#include "ui_ratingdialog.h"
 #include <QDialog>
 
 QT_BEGIN_NAMESPACE
@@ -21,17 +23,19 @@ signals:
     void showLogine();
 
 public slots:
-    void on_addDataButton_clicked();
     void showStudentScrn();
     void hideStudFeat();
 
 private slots:
     void on_logOutButton_clicked();
 
+    void on_addRatingButton_clicked();
+
 private:
     Ui::StudentScreen *ui;
     Studentdialog student;
     Suspenddialog sus;
+    Ratingdialog rat;
 
 };
 #endif // STUDENTSCREEN_H

@@ -67,7 +67,7 @@ background-color: rgb(60, 4, 76);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -78,28 +78,6 @@ background-color: rgb(60, 4, 76);</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="3" column="0">
-     <widget class="QPushButton" name="newsequencebutton">
-      <property name="styleSheet">
-       <string notr="true">color: rgb(60, 4, 76);
-background-color: rgb(234, 234, 234);</string>
-      </property>
-      <property name="text">
-       <string>Add New Sequence</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="newlecturerbutton">
-      <property name="styleSheet">
-       <string notr="true">color: rgb(60, 4, 76);
-background-color: rgb(234, 234, 234);</string>
-      </property>
-      <property name="text">
-       <string>Add New Lecturer</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
      <widget class="QPushButton" name="rupwdButton">
       <property name="styleSheet">
        <string notr="true">color: rgb(60, 4, 76);
@@ -110,18 +88,7 @@ background-color: rgb(234, 234, 234);</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QPushButton" name="newcoursebutton">
-      <property name="styleSheet">
-       <string notr="true">color: rgb(60, 4, 76);
-background-color: rgb(234, 234, 234);</string>
-      </property>
-      <property name="text">
-       <string>Add New Course</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
+    <item row="4" column="0">
      <widget class="QPushButton" name="suspaccButton">
       <property name="styleSheet">
        <string notr="true">color: rgb(60, 4, 76);
@@ -132,14 +99,36 @@ background-color: rgb(234, 234, 234);</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QPushButton" name="newstudentbutton">
+    <item row="2" column="0">
+     <widget class="QPushButton" name="newsequencebutton">
       <property name="styleSheet">
        <string notr="true">color: rgb(60, 4, 76);
 background-color: rgb(234, 234, 234);</string>
       </property>
       <property name="text">
-       <string>Add a new Student</string>
+       <string>Add New Sequence</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="newlecturerbutton">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(60, 4, 76);
+background-color: rgb(234, 234, 234);</string>
+      </property>
+      <property name="text">
+       <string>Add New Lecturer</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="newcoursebutton">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(60, 4, 76);
+background-color: rgb(234, 234, 234);</string>
+      </property>
+      <property name="text">
+       <string>Add New Course</string>
       </property>
      </widget>
     </item>

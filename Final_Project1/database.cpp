@@ -517,4 +517,9 @@ QString Database::verifyLogin(QString user, QString pswd, QString type)
 
 }
 
+QString Database::insertRating(Rating)
+{
+
+}
+
 

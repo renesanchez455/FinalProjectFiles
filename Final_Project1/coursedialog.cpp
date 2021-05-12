@@ -37,3 +37,5 @@ void Coursedialog::on_registerbutton_clicked()
     ui->creditEdit->clear();
     ui->descriptionEdit->clear();
 }
+
+

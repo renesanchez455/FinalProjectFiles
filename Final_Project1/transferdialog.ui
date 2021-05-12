@@ -96,7 +96,7 @@ background-color: rgb(60, 4, 76);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>71</x>
@@ -129,7 +129,7 @@ background-color: rgb(60, 4, 76);</string>
        </spacer>
       </item>
       <item>
-       <widget class="QComboBox" name="CourseComboBox">
+       <widget class="QComboBox" name="courseComboBox">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>
@@ -310,7 +310,7 @@ background-color: rgb(60, 4, 76);</string>
        </spacer>
       </item>
       <item>
-       <widget class="QComboBox" name="GradeComboBox">
+       <widget class="QComboBox" name="gradeComboBox">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>
@@ -391,7 +391,7 @@ background-color: rgb(60, 4, 76);</string>
        </spacer>
       </item>
       <item>
-       <widget class="QComboBox" name="InstitutionComboBox">
+       <widget class="QComboBox" name="institutionComboBox">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>

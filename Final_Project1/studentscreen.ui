@@ -90,13 +90,13 @@ background-color: rgb(60, 4, 76);</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="addDataButton">
+     <widget class="QPushButton" name="addRatingButton">
       <property name="styleSheet">
        <string notr="true">color: rgb(60, 4, 76);
 background-color: rgb(234, 234, 234);</string>
       </property>
       <property name="text">
-       <string>Add Data</string>
+       <string>Rate a Course</string>
       </property>
      </widget>
     </item>

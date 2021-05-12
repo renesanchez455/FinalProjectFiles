@@ -109,7 +109,7 @@ background-color: rgb(60, 4, 76);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -424,22 +424,12 @@ background-color: rgb(60, 4, 76);</string>
         </item>
         <item>
          <property name="text">
-          <string>2011</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
           <string>2012</string>
          </property>
         </item>
         <item>
          <property name="text">
           <string>2013</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>2014</string>
          </property>
         </item>
         <item>
@@ -470,11 +460,6 @@ background-color: rgb(60, 4, 76);</string>
         <item>
          <property name="text">
           <string>2020</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>2021</string>
          </property>
         </item>
        </widget>

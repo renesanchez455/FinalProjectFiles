@@ -12,6 +12,7 @@
 #include "sequence.h"
 #include "reset.h"
 #include "suspend.h"
+#include "rating.h"
 
 namespace Ui {
 class Database;
@@ -29,6 +30,7 @@ public:
     void suspendAccount(Suspend);
     QString insertSequence(Sequence);
     QString verifyLogin(QString, QString, QString);
+    QString insertRating(Rating);
 
 signals:
     void showStudentScrn();

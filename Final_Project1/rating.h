@@ -4,7 +4,7 @@
 
 class Rating
 {
-public: //8
+public:
     Rating(const QString &, const QString &, const QString &, const QString &, const QString &, const QString &, const QString &, const QString &);
     void setCourse(QString);
     void setLecturer(QString);
