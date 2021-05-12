@@ -13,14 +13,15 @@ admin::admin(QWidget *parent)
     connect(&reset, SIGNAL(showadmine()), this, SLOT(showAdmin()));
     connect(&suspend, SIGNAL(showadmine()), this, SLOT(showAdmin()));
 
-    //connect signals created from lecturer and student here with the data...
+    //Connects the signals created from lecturer and student here with the data
 }
-
+//The admin destructor
 admin::~admin()
 {
     delete ui;
 }
 
+//Option to create a new lecturer
 void admin::on_newlecturerbutton_clicked()
 {
     lecturer.show();
@@ -30,6 +31,7 @@ void admin::on_newlecturerbutton_clicked()
     hide();
 }
 
+//Option to create a new
 void admin::on_newcoursebutton_clicked()
 {
     course.show();
@@ -39,6 +41,7 @@ void admin::on_newcoursebutton_clicked()
     hide();
 }
 
+//Opens the admin window
 void admin::showAdmin()
 {
     show();
@@ -46,12 +49,14 @@ void admin::showAdmin()
     activateWindow();
 }
 
+//Option to leave tto login screen
 void admin::on_logOutButton_clicked()
 {
     close();
     emit showLogine();
 }
 
+//Option to create a new sequence
 void admin::on_newsequencebutton_clicked()
 {
     hide();
@@ -60,6 +65,7 @@ void admin::on_newsequencebutton_clicked()
     seq.activateWindow();
 }
 
+//Option to create a new password
 void admin::on_rupwdButton_clicked()
 {
     hide();
@@ -68,7 +74,7 @@ void admin::on_rupwdButton_clicked()
     reset.activateWindow();
 }
 
-
+//Option to suspend an account
 void admin::on_suspaccButton_clicked()
 {
     hide();
