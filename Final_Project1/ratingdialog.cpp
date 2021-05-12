@@ -8,6 +8,7 @@ Ratingdialog::Ratingdialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+//Rating destructor
 Ratingdialog::~Ratingdialog()
 {
     delete ui;

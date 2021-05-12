@@ -8,23 +8,26 @@ Resetdialog::Resetdialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+//Reset destructor
 Resetdialog::~Resetdialog()
 {
     delete ui;
 }
 
+//Shows the reset window
 void Resetdialog::showResetDialog()
 {
     show();
 }
 
+//Option to retun back to admin window
 void Resetdialog::on_cancelButton_clicked()
 {
     Resetdialog::close();
     emit showadmine();
 }
 
-
+//Updates the user information
 void Resetdialog::on_updateButton_clicked()
 {
     Userid = ui->userIDLine->text();
@@ -38,7 +41,7 @@ void Resetdialog::on_updateButton_clicked()
     ui->newPasswordLine->clear();
 }
 
-
+//Adds the user types to the combo box
 void Resetdialog::on_userTypeComboBox_currentIndexChanged(int index)
 {
     if(index == 0)

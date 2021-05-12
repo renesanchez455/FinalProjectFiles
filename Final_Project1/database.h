@@ -27,7 +27,7 @@ public:
     QString insertCourse(Course);
     void findStudent(QString );
     void resetUserPwd(Reset);
-    void suspendAccount(Suspend);
+    void suspendAccount(Suspend); //function prototype to suspend account
     QString insertSequence(Sequence);
     QString verifyLogin(QString, QString, QString);
     QString insertRating(Rating);

@@ -8,23 +8,34 @@ StudentScreen::StudentScreen(QWidget *parent)
 {
     ui->setupUi(this);
     connect(&sus, SIGNAL(hideSFeat()), this, SLOT(hideStudFeat()));
-    connect(&rat, SIGNAL(showStudentscr()), this, SLOT(showStudentScrn()));
 }
 
+//Stduent destructor
 StudentScreen::~StudentScreen()
 {
     delete ui;
 }
 
+//Shows student window
+void StudentScreen::on_addDataButton_clicked()
+{
+    student.show();
+    student.raise();
+    student.activateWindow();
+}
+
+//Shows student screen
 void StudentScreen::showStudentScrn()
 {
     show();
+
 }
 
+//Blocks student from seeing suspended accountt
 void StudentScreen::hideStudFeat()
 {
     show();
-    ui->addRatingButton->hide();
+    ui->addDataButton->hide();
     ui->viewCSButton->hide();
     QMessageBox msg;
     msg.setWindowTitle("Account Suspended");
@@ -32,17 +43,9 @@ void StudentScreen::hideStudFeat()
     msg.exec();
 }
 
+//Option to return to login screen
 void StudentScreen::on_logOutButton_clicked()
 {
     close();
     emit showLogine();
 }
-
-void StudentScreen::on_addRatingButton_clicked()
-{
-    hide();
-    rat.show();
-    rat.raise();
-    rat.activateWindow();
-}
-

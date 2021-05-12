@@ -8,12 +8,13 @@ Sequencedialog::Sequencedialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+//Sequence destructor
 Sequencedialog::~Sequencedialog()
 {
     delete ui;
 }
 
-
+//Option to add a new sequence
 void Sequencedialog::on_addButton_clicked()
 {
     qDebug()<<course;
@@ -23,6 +24,7 @@ void Sequencedialog::on_addButton_clicked()
     ui->resultLabel->setText(db.insertSequence(seq));
 }
 
+//Adds the 2 programs to the combo box 
 void Sequencedialog::on_ProgramComboBox_currentIndexChanged(int index)
 {
     if(index == 0)
@@ -39,6 +41,7 @@ void Sequencedialog::on_ProgramComboBox_currentIndexChanged(int index)
     }
 }
 
+//Adds the two semesters to the combo box
 void Sequencedialog::on_SemesterComboBox_currentIndexChanged(int index)
 {
     if(index == 0)
@@ -55,12 +58,14 @@ void Sequencedialog::on_SemesterComboBox_currentIndexChanged(int index)
     }
 }
 
+//Option to return to admin window
 void Sequencedialog::on_cancelButton_clicked()
 {
     close();
     emit showadmine();
 }
 
+//Adds the course to the combo box
 void Sequencedialog::on_CourseComboBox_currentTextChanged(const QString &arg1)
 {
     course=arg1;
