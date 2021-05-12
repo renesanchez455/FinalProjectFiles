@@ -10,11 +10,13 @@ StudentScreen::StudentScreen(QWidget *parent)
     connect(&sus, SIGNAL(hideSFeat()), this, SLOT(hideStudFeat()));
 }
 
+//Stduent destructor
 StudentScreen::~StudentScreen()
 {
     delete ui;
 }
 
+//Shows student window
 void StudentScreen::on_addDataButton_clicked()
 {
     student.show();
@@ -22,12 +24,14 @@ void StudentScreen::on_addDataButton_clicked()
     student.activateWindow();
 }
 
+//Shows student screen
 void StudentScreen::showStudentScrn()
 {
     show();
 
 }
 
+//Blocks student from seeing suspended accountt
 void StudentScreen::hideStudFeat()
 {
     show();
@@ -39,6 +43,7 @@ void StudentScreen::hideStudFeat()
     msg.exec();
 }
 
+//Option to return to login screen
 void StudentScreen::on_logOutButton_clicked()
 {
     close();
