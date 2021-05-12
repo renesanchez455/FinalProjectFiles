@@ -10,23 +10,26 @@ Searchdialog::Searchdialog(QWidget *parent)
 
 }
 
+//Search dialog destructor
 Searchdialog::~Searchdialog()
 {
     delete ui;
 }
 
+//Displays the search data 
 void Searchdialog::dsiplaySearchData(QString f)
 {
 //    ui->idlinestuff->setText(f);
 }
 
-
+//Option to return to the admin window
 void Searchdialog::on_cancelButton_clicked()
 {
     Searchdialog::close();
     emit showadmine();
 }
 
+//Option to search for a student
 void Searchdialog::on_searchButton_clicked()
 {
     Database db;
