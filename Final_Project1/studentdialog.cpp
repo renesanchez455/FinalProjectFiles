@@ -10,11 +10,13 @@ Studentdialog::Studentdialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+//Student dialog destructor
 Studentdialog::~Studentdialog()
 {
     delete ui;
 }
 
+//Option to return to login screen
 void Studentdialog::on_cancelButton_clicked()
 {
     close();
@@ -22,6 +24,7 @@ void Studentdialog::on_cancelButton_clicked()
 //    emit showadmine();
 }
 
+//Assigns the information to student dialog
 void Studentdialog::on_okButton_clicked()
 {
     SID = ui->studentIDLine->text();
