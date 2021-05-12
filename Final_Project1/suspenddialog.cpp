@@ -9,25 +9,26 @@ Suspenddialog::Suspenddialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+//Suspend dialog destructor
 Suspenddialog::~Suspenddialog()
 {
     delete ui;
 }
 
+//Opens suspend dialog window
 void Suspenddialog::showSuspendDialog()
 {
     show();
 }
 
-
+//Option to return to the admin window
 void Suspenddialog::on_cancelButton_clicked()
 {
     Suspenddialog::close();
     emit showadmine();
 }
 
-
-
+//Allows for the user status to be updated
 void Suspenddialog::on_updateButton_clicked()
 {
     Userid = ui->userIDLine->text();
@@ -40,7 +41,7 @@ void Suspenddialog::on_updateButton_clicked()
 }
 
 
-
+//Adds the user types to the combo box
 void Suspenddialog::on_userTypeComboBox_currentIndexChanged(int index)
 {
     if(index == 0)
@@ -57,7 +58,7 @@ void Suspenddialog::on_userTypeComboBox_currentIndexChanged(int index)
     }
 }
 
-
+//Adds the statuses to the combo box
 void Suspenddialog::on_StatusComboBox_currentIndexChanged(int index)
 {
     if(index == 0)
