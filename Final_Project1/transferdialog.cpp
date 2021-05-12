@@ -8,6 +8,7 @@ Transferdialog::Transferdialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+//Transfer dialog destructor
 Transferdialog::~Transferdialog()
 {
     delete ui;
