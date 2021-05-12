@@ -11,11 +11,13 @@ Lecturerdialog::Lecturerdialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+//Lecturer destructor
 Lecturerdialog::~Lecturerdialog()
 {
     delete ui;
 }
 
+//Option to return to admin window
 void Lecturerdialog::on_cancelButton_clicked()
 {
     Lecturerdialog::close();
@@ -23,6 +25,7 @@ void Lecturerdialog::on_cancelButton_clicked()
     emit showadmine();
 }
 
+//Assigns the information to the lecturer
 void Lecturerdialog::on_okButton_clicked()
 {
     LID = ui->lecturerIDLine->text();
